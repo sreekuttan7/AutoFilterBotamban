@@ -42,8 +42,8 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "autofilter")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # AI
-HORRI_API_KEY = environ.get('HORRI_API_KEY', '') # You can get api key here https://t.me/Mrz_bots/222
-BOT_USERNAME = environ.get('BOT_USERNAME', 'AmbanRobot')
+HORRI_API_KEY = environ.get('horridapi_8YG22mXZ25lsrQOolaOVPA_free_key', '') # You can get api key here https://t.me/Mrz_bots/222
+BOT_USERNAME = environ.get('@vipersfilterbot', 'RANGAN')
 
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
