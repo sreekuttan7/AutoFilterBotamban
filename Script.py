@@ -12,10 +12,10 @@ class script(object):
 ✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.1 [ 𝙱𝙴𝚃𝙰 ]</b>"""
     SOURCE_TXT = """<b>NOTE:</b>
 - 𝐀𝐌𝐁𝐀𝐍 is an open source 
-- Sᴏᴜʀᴄᴇ  -   
+- Sᴏᴜʀᴄᴇ  - 
 
 <b>DEVS:</b>
-- <a href=https://t.me/Mrz_bots>Creator</a>"""
+- <a href=https://t.me/chinima7</a>"""
     TELEGRAPH = """Reply to any photo or video using by /telegraph that photo telegraph link you will get"""
     TOOLS = """TOOLS:
 
