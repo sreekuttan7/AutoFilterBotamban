@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://telegra.ph/file/146b46f7e523b8f028649.jpg" alt="Autofilter-bot">
+  <img src="https://telegra.ph/file/07b0deece36ea95f9bde7.jpg" alt="Autofilter-bot">
 </p>
 <h1 align="center">
   <b>Auto Filter Bot</b>
