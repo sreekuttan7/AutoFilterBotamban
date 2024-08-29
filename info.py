@@ -43,7 +43,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # AI
 HORRI_API_KEY = environ.get('horridapi_8YG22mXZ25lsrQOolaOVPA_free_key', '') # You can get api key here https://t.me/Mrz_bots/222
-BOT_USERNAME = environ.get('@vipersfilterbot', 'RANGAN')
+BOT_USERNAME = "@vipersfilterbot"
 
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
