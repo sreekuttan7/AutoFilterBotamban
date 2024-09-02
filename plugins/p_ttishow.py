@@ -37,7 +37,7 @@ async def save_group(bot, message):
             await bot.leave_chat(message.chat.id)
             return
         buttons = [[
-            InlineKeyboardButton('ℹ️ Hᴇʟᴘ', url=f"https://t.me/{temp.U_NAME}?start=help"),
+            InlineKeyboardButton('ℹ️ Hᴇʟᴘ', url=f"https://t.me/VIPERX4{temp.U_NAME}?start=help"),
             InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url=UPDATE_CHANNEL)
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
