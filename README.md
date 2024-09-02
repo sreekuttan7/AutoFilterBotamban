@@ -8,6 +8,8 @@
 
 ## Features
 
+- [x] 𝗔𝗜 𝗙𝗘𝗔𝗧𝗨𝗥𝗘𝗦 
+- [x] Start emoji
 - [x] Auto Filter
 - [X] Auto Start Pic
 - [x] Manual Filter
@@ -38,7 +40,7 @@
 * `FILE_STORE_CHANNEL`: Channel from were file store links of posts should be made.Separate multiple IDs by space
 
 ## Deploy
-<details><summary>Deploy To Heroku</summary>
+<details><summary>Deploy To Heroku|PAID| </summary>
 <p>
 <br>
 <a href="https://heroku.com/deploy?template=https://github.com/Mishel-Tg/AutoFilterBot">
@@ -47,7 +49,7 @@
 </p>
 </details>
 
-<details><summary>Deploy To VPS</summary>
+<details><summary>Deploy To VPS|FREE I GUESS|</summary>
 <p>
 <pre>
 git clone https://github.com/Mishel-Tg/AutoFilterBot
@@ -59,7 +61,7 @@ python3 bot.py
 </p>
 </details>
 
-<details><summary>Deploy To Render</summary>
+<details><summary>Deploy To Render|FREE|</summary>
 <p>
 <pre>
 <a href=https://youtu.be/wJZWE2wdRM8?si=jik03F0MvJdZSCD9>Toturial Video</a>
@@ -120,11 +122,7 @@ python3 bot.py
 
 ### Note
 
-[Note To A So Called Dev](https://telegram.dog/mrz_bots): 
-
-Kanging this codes and and editing a few lines and releasing a V.x  or an [alpha](https://telegram.dog/subin_works/204), beta , gama branches of your repo won't make you a Developer.
-Fork the repo and edit as per your needs.
-ORIGINAL_BOT = https://t.me/vipersfilterbot
+𝗢𝗨𝗥 𝗕𝗢𝗧 = @vipersfilterbot
 
 ## Inspiration
 This is an attempt to create a clone of a BOAT made out of [banana trees 🌳](https://telegram.dog/GetTGLink/4187)
