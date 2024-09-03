@@ -1164,7 +1164,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "source":
         buttons = [[     
-            InlineKeyboardButton('Rᴇᴘᴏ', url="https://github.com/sreeragog/AutoFilterBotamban.git"),
+            InlineKeyboardButton('Rᴇᴘᴏ', url="https://youtu.be/xvFZjo5PgG0?si=mpTGyddyYcZsZQfm"),
             InlineKeyboardButton('⇌ Bᴀᴄᴋ ⇌', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1361,7 +1361,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ]
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_reply_markup(reply_markup)
-    await query.answer("okda")
+    await query.answer("okda muthe⚡")
 
 
 async def auto_filter(client, msg, spoll=False):
