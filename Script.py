@@ -11,8 +11,8 @@ class script(object):
 ✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝚁𝙴𝙽𝙳𝙴𝚁
 ✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.1 [ 𝙱𝙴𝚃𝙰 ]</b>"""
     SOURCE_TXT = """<b>NOTE:</b>
-- 𝗥𝗔𝗡𝗚𝗔𝗡 is an open source 
-- Sᴏᴜʀᴄᴇ  - https://github.com/sreeragog/AutoFilterBotamban.git
+- 𝗥𝗔𝗡𝗚𝗔𝗡 is not an open source 
+- Sᴏᴜʀᴄᴇ  - <a href=https://youtu.be/xvFZjo5PgG0?si=2fgM1JCVb6pzhplL>𝗖𝗟𝗜𝗖𝗞 𝗙𝗢𝗥 𝗦𝗢𝗨𝗥𝗖𝗘❤️</a>
 
 <b>DEVS:</b>
 - <a href=https://t.me/VIPERX4>⚡𝗭𝗘𝗡𝗜𝗧𝗦𝗨 𝗥𝗖𝗠⚡</a>"""
