@@ -24,7 +24,7 @@ async def openai(client, message):
         ]
     }
     try:           
-        response = openai.gen_content(payload, "gpt-3.5")
+        response = openai.ChatCompletion.create(payload, "gpt-3.5")
         content = response['response']
         await mes.edit(f"Hey {message.from_user.mention},\n\nQuery: {text}\n\nResult:\n\n{content}")
 
