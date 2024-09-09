@@ -31,5 +31,5 @@ async def openai(client, message):
 
     except Exception as e:  
         # print(e)
-        error_message = f"Hmm, something went wrong: {str(e)}"[:100] + "...\n use /bug comment"
+        error_message = f"Baby, something went wrong: {str(e)}"[:100] + "...\n use /bug comment"
         await mes.edit(error_message)
