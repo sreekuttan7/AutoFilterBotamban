@@ -14,7 +14,7 @@ async def openai(client, message):
         query = f"{message.reply_to_message.text}\n{text}"
     else:
         query = " ".join(message.command[1:])
-    mes = await message.reply_text("🔍")
+    mes = await message.reply_text("💻")
     payload = {
         "messages": [                    
             {            
