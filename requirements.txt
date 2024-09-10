@@ -19,3 +19,4 @@ psutil
 aiohttp
 HorridAPI==1.0.28
 telegraph
+gpt-3.5
