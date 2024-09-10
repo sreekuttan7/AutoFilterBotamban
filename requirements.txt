@@ -19,4 +19,4 @@ psutil
 aiohttp
 HorridAPI==1.0.28
 telegraph
-
+nltk==3.6.2
