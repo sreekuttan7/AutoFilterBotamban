@@ -1,36 +1,49 @@
-# credits @Mrz_bots
+import telebot
+from telebot import types
 
-import requests
-from HorridAPI.AiGenerativeContent import AiGenerativeContent 
-from pyrogram import Client, filters
+# Replace with your actual bt token
+BOT_TOKEN = "6815093612:AAEA_7V2a-G_yQ3Zw2IpxV_iWQqm64liTcI"
 
+# Create the bot instance
+bot = telebot.TeleBot(BOT_TOKEN)
 
-@Client.on_message(filters.command("openai"))
-async def openai(client, message):
-    text = " ".join(message.command[1:])
-    if len(message.command) < 2:
-        return await message.reply_text("Please provide query!")
-    if message.reply_to_message:
-        query = f"{message.reply_to_message.text}\n{text}"
-    else:
-        query = " ".join(message.command[1:])
-    mes = await message.reply_text("💻")
-    role = "My owner name is 𝙕𝙀𝙉𝙄𝙏𝙎𝙐[𝙍𝘾𝙈]"
-    payload = {
-        "messages": [                    
-            {            
-                "role": "user", 
-                "content": query
-            }
-        ]
-    }
-    try:    
-        openai = AiGenerativeContent
-        response = openai.gen_content(payload, "gpt-3.5")
-        content = response['response']
-        await mes.edit(f"Hey {message.from_user.mention},\n\nQuery: {text}\n\nResult:\n\n{content}")
+# Store the state of autofilter for each chat
+autofilter_state = {}
 
-    except Exception as e:  
-        # print(e)
-        error_message = f"Baby, something went wrong: {str(e)}"[:100] + "...\n use /bug comment"
-        await mes.edit(error_message)
+# Define the keyboard for autofilter options
+keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
+keyboard.add(types.KeyboardButton("Autofilter On"), types.KeyboardButton("Autofilter Off"))
+
+# Handle the /start command
+@bot.message_handler(commands=['start'])
+def start_command(message):
+  chat_id = message.chat.id
+  # Initialize autofilter state for the chat
+  autofilter_state[chat_id] = False
+  bot.send_message(chat_id, "Welcome! Use /autofilter to toggle autofilter.")
+
+# Handle the /autofilter command
+@bot.message_handler(commands=['autofilter'])
+def autofilter_command(message):
+  chat_id = message.chat.id
+  # Toggle the autofilter state
+  autofilter_state[chat_id] = not autofilter_state[chat_id]
+  if autofilter_state[chat_id]:
+    bot.send_message(chat_id, "Autofilter is now **ON**.", reply_markup=keyboard)
+  else:
+    bot.send_message(chat_id, "Autofilter is now **OFF**.", reply_markup=keyboard)
+
+# Handle all other messages
+@bot.message_handler(func=lambda message: True)
+def handle_message(message):
+  chat_id = message.chat.id
+  if autofilter_state[chat_id]:
+    # Your autofilter logic here
+    # Example:
+    filtered_message = message.text.replace("badword", "***")
+    bot.send_message(chat_id, filtered_message)
+  else:
+    bot.send_message(chat_id, message.text)
+
+# Start the bot
+bot.polling()
